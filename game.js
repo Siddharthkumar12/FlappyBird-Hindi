@@ -20,7 +20,7 @@ let selectedBird = 'duck';
 // पक्षी चुनने का फंक्शन
 function selectBird(birdType) {
     selectedBird = birdType;
-    bird.style.backgroundImage = `url('assets/${birdType}.png')`;
+    bird.style.backgroundImage = `url('assets/duck.png')`;
     birdSelection.style.display = 'none';
     gameArea.style.display = 'block';
     startGame();
