@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारतीय फ्लैपी बर्ड - कस्टम पक्षी</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="bird-selection">
+            <h2>अपना पक्षी चुनें</h2>
+            <div class="birds">
+                <img src="assets/duck.png" alt="बत्तख" onclick="selectBird('duck')">
+                <img src="assets/parrot.png" alt="तोता" onclick="selectBird('parrot')">
+                <img src="assets/penguin.png" alt="पेंगुइन" onclick="selectBird('penguin')">
+                <img src="assets/swan.png" alt="हंस" onclick="selectBird('swan')">
+            </div>
+        </div>
+        <div id="game-area" style="display:none;">
+            <div id="score">0</div>
+            <div id="bird"></div>
+        </div>
+        <div id="game-over">गेम ओवर!<br>फिर से खेलने के लिए स्पेस दबाएं</div>
+    </div>
+
+    <div class="controls">
+        <button onclick="shareGame()">📱 शेयर करें</button>
+        <button onclick="donate()">💸 डोनेट (UPI)</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
